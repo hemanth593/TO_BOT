@@ -1,0 +1,9 @@
+--lua
+log 'clear' log 'mode compact'
+local bot = require("Boss/Boss")
+attackskills = "1236789"
+CHAR_NAME = "Ludey"
+bot.verifyclient()
+while true do
+    Boss.pcp_suwan1()
+end

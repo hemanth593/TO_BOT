@@ -279,4 +279,31 @@ function Boss.attackBlazeSkullMarshal()
 	
 end
 
+function Boss.auto_attack_on_rev1()
+    if image.find_image("ok.bmp") == 1 then
+        wait(300)
+        left(429, 338)
+        wait(300)
+    else
+                wait(100)
+                send (attackskills)
+    end
+end
+function Boss.pcp_suwan1()
+    if image.find_image("norevok.bmp") == 1 then
+        wait(300)
+        left(515, 468)
+        wait(500)
+    else
+         if image.find_image("suwan.bmp") == 1 or image.find_image("sanyu.bmp") == 1 or image.find_image("lusalon.bmp") == 1 or image.find_image("Lauhuan.bmp") == 1 then
+
+                wait(100)
+                send (attackskills)
+        else
+                send("TAB")
+                wait(100)
+        end
+
+    end
+end
 return Boss

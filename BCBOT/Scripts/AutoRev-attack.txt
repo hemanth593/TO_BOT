@@ -1,0 +1,9 @@
+--lua
+log 'clear' log 'mode compact'
+local bot = require("Boss/Boss")
+attackskills = "0"
+CHAR_NAME = "Ghez007"
+bot.verifyclient()
+while true do
+Boss.auto_attack_on_rev1()
+end
