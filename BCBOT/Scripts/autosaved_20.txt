@@ -1,0 +1,10 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local bot = require("Bot/bot")
+local image = require("Bot/image")
+local memory = require("Bot/memory")
+ --attackskills = "1236789p"
+
+--image.getimage(614, 32  ,660, 61 , "bha")
+image.getimage(524, 69,531, 79  , "mbuff")

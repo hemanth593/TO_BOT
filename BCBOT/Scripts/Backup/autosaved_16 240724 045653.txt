@@ -1,0 +1,27 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local image = require("Bot/image")
+ attackskills = "1236789p"
+
+BC.travelPath(movetoaltar2)
+while true do
+
+
+ --image.getimage(413, 188 ,414, 190 , "wep-wheel")
+  --image.getimage(421, 193  ,427, 197  , "wep-staff")
+  --image.getimage(421, 193  ,427, 197  , "wep-blade")
+
+--image.findwepimage()
+--image.findwepimage1()
+if image.find_image_target("cinnarbar.bmp") == 1 then
+    send(attackskills)
+else
+    left(578, 467 )
+    wait("25s")
+end
+end
+
+
+
+

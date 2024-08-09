@@ -1,0 +1,11 @@
+-- lua
+function getCurrentPath()
+    local handle = io.popen("cd")
+    local current_path = handle:read("*a")
+    handle:close()
+    return current_path
+end
+
+-- Example usage
+local path = getCurrentPath()
+print("Current Path: " .. path)

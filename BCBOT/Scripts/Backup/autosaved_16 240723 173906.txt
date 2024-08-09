@@ -1,0 +1,28 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local image = require("Bot/image")
+while true do
+    wait("600")
+    send("7")
+    log("clicked")
+    wait("600")
+
+
+ --image.getimage(413, 188 ,414, 190 , "wep-wheel")
+ image.getimage(421, 193  ,427, 197  , "wep-pearl")
+  --image.getimage(421, 193  ,427, 197  , "wep-blade")
+
+    if image.find_image("wep-wheel.bmp") == 1 then
+        log("found")
+    end
+    if  image.find_image("wep-wheel.bmp") == 0 then
+               -- log("notfound")
+    end
+
+
+    log("clicked image")
+    wait("1s")
+end
+
+

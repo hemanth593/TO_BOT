@@ -1,0 +1,7 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local image = require("Bot/image")
+
+--Set your keys
+image.getimage1(500, 215,578, 226, "sell")

@@ -1,0 +1,12 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local image = require("Bot/image")
+
+--Set your keys
+--image.getimage(500, 215, 578, 226, "sell")   --sell
+--image.getimage(213, 214, 284, 226, "buy") --Buy
+--image.getimage(147, 374 , 175, 385 , "item") --item
+image.getimage(239, 213 , 283, 250 , "transportfaydialogue") --transportfaydialogue
+--image.getimage(239, 213 , 283, 250 , "blacksmithdialogue")
+

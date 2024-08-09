@@ -1,0 +1,7 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local bot = require("Bot/bot")
+local BC = require("BC/BC")
+--Set your keys
+log(bot.Ghostdinwoods())

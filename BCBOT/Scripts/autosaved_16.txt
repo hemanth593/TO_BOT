@@ -1,0 +1,19 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local bot = require("Bot/bot")
+local image = require("Bot/image")
+local memory = require("Bot/memory")
+ --attackskills = "1236789p"
+
+ --image.getimage(614, 32  ,660, 61 , "howlingwind")
+-- log(image.find_image("wep-knee.bmp"))
+--image.findwepimage1()
+ --image.findcrystalimage()
+
+--log(memory.get_percent_HP())
+while true do
+if memory.targetHPpercent() > 0 or image.find_image_target("BSM.bmp") == 1 then
+    log(image.find_image_target("BSM.bmp"))
+end
+end

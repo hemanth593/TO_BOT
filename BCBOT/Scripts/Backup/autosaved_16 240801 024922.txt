@@ -1,0 +1,14 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local bot = require("Bot/bot")
+local image = require("Bot/image")
+local memory = require("Bot/memory")
+ --attackskills = "1236789p"
+
+-- image.getimage(158, 407 ,159, 417 , "GoldenCrystal2")
+-- log(image.find_image("wep-knee.bmp"))
+--image.findwepimage1()
+ --image.findcrystalimage()
+
+log(memory.targetHP())

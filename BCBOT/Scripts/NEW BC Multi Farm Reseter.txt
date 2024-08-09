@@ -1,0 +1,13 @@
+// just run this on reseter app
+// Works even with Minimized window
+-- lua
+log 'clear' log 'mode compact'
+local bot = require("Bot/bot")
+while true do
+    wait(2000)
+if  bot.getConfirmBox() > 0 then
+     wait(2000)
+     left(446, 331)
+     wait(1000)
+end
+end

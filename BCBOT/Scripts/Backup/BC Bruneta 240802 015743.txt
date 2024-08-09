@@ -1,0 +1,34 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local bot = require("Bot/bot")
+local BC = require("BC/BC")
+--Set your keys
+--startreseterscritpt = 1
+
+mountkey = "F6"
+windcontrolling = "F2"
+healskill = 8    --put Fairy Healing skill here / Wizz superskill healing
+attackskills = 321 -- for wizz donot add aoe skills here  for tamer add aoe skills too
+aoe = 32        --For Fairy put same as primary skill / Rest of the chars put instant and aoe slot number
+stonecitycharm = 5
+buff1 = "F7"
+buff2 = "F8"      -- Any Buff if required
+Petfood = 0
+pet = 9
+--presets
+CHAR_NAME = "Bruneta"
+ADDTEAM = "BLOCK"
+WeakChar = "NO"
+Fairy = "NO"
+HeroBadge = "ON"
+SoulBell = "OFF"
+Health_Check = 95
+gamePath = "C:\\Games\\TO\\TalismanOnline\\launcher.bat"
+Game_Server = "GSM"
+--Script
+bot.verifyclient()
+--BC.Invisiblemode()
+while true do
+    BC.start()
+end

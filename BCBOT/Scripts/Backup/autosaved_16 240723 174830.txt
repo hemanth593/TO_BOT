@@ -1,0 +1,19 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local image = require("Bot/image")
+while true do
+
+
+
+ --image.getimage(413, 188 ,414, 190 , "wep-wheel")
+  --image.getimage(421, 193  ,427, 197  , "wep-staff")
+  --image.getimage(421, 193  ,427, 197  , "wep-blade")
+
+image.findwepimage()
+
+    log("clicked image")
+    wait("1s")
+end
+
+

@@ -1,0 +1,27 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local BC = require("BC/BC")
+ attackskills = "1236789p"
+
+
+function find_image_target(imagename)
+    local handle = workwindow()
+    local startX, startY, endX, endY = 412, 5, 672, 110
+    if handle then
+        local arr, a = findimage (startX, startY, endX, endY, {imagename}, workwindow(), 90, -1, 5) -- image search
+        hint (a)
+        if arr then
+            return 1
+        else
+            return 0
+        end
+    else
+        return 2
+    end
+end
+
+
+ BC.gettotargetspot()
+
+stop_script

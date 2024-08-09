@@ -1,0 +1,18 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local bot = require("Bot/bot")
+local image = require("Bot/image")
+local memory = require("Bot/memory")
+while true do
+if image.find_image_target("lovely.bmp") == 1 then
+        wait(40)
+        send("666")
+        wait(40)
+    else
+        wait(40)
+        send("77777")
+        wait(40)
+end
+end
+

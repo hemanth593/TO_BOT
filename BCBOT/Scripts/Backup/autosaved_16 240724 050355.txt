@@ -1,0 +1,28 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local image = require("Bot/image")
+ attackskills = "1236789p"
+while true do
+
+
+ --image.getimage(413, 188 ,414, 190 , "wep-wheel")
+  --image.getimage(421, 193  ,427, 197  , "wep-staff")
+ --image.getimage(475, 71   ,484, 79   , "cinnabar")
+ log(image.find_image_target("cinnabar.bmp"))
+--image.findwepimage()
+--image.findwepimage1()
+if   image.find_image_target("cinnabar.bmp") == 0 then
+    wait("5s")
+    send("1236789p")
+else
+    left(558, 444 )
+     wait("25s")
+
+end
+
+end
+
+
+
+

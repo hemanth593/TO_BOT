@@ -1,0 +1,11 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local bot = require("Bot/bot")
+local image = require("Bot/image")
+ --attackskills = "1236789p"
+
+ image.getimage(182, 153 ,432, 520 , "GoldenCrystal")
+-- log(image.find_image("wep-knee.bmp"))
+--image.findwepimage1()
+

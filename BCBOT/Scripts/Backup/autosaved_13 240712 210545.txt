@@ -1,0 +1,33 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local image = require("Bot/image")
+
+--Set your keys
+--image.getimage(500, 215, 578, 226, "sell")   --sell
+--image.getimage(213, 214, 284, 226, "buy") --Buy
+--image.getimage(147, 374 , 175, 385 , "item") --item
+--image.getimage(239, 213 , 283, 250 , "transportfaydialogue") --transportfaydialogue
+-- image.getimage(239, 213 , 283, 250 , "blacksmithdialogue")
+--image.getimage(322, 195 , 399, 206 , "dialogue")   --dialogue
+--image.getimage(322, 195 , 399, 206 , "dialogue") --
+send("f")
+wait("1s")
+left(537, 186 )
+ wait("1s")
+image.getimage(590, 151,663, 162 , "friendlist")
+left(626, 195 )
+ wait("1s")
+image.getimage(590, 151,663, 162 , "foelist")
+left(704, 194 )
+ wait("1s")
+image.getimage(590, 151,663, 162 , "blocklist")
+send("f")
+ wait("1s")
+left(978, 60 )
+ wait("1s")
+ left(410, 191 )
+ image.getimage(399, 159, 473, 169, "surroundings")
+  wait("1s")
+
+

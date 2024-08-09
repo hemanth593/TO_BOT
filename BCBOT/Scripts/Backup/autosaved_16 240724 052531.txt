@@ -1,0 +1,47 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local BC = require("BC/BC")
+ attackskills = "1236789p"
+
+
+function find_image_target(imagename)
+    local handle = workwindow()
+    local startX, startY, endX, endY = 412, 5, 672, 110
+    if handle then
+        local arr, a = findimage (startX, startY, endX, endY, {imagename}, workwindow(), 90, -1, 5) -- image search
+        hint (a)
+        if arr then
+            return 1
+        else
+            return 0
+        end
+    else
+        return 2
+    end
+end
+
+
+ BC.gettotargetspot()
+
+stop_script
+while true do
+ --image.getimage(413, 188 ,414, 190 , "wep-wheel")
+  --image.getimage(421, 193  ,427, 197  , "wep-staff")
+ --image.getimage(475, 71   ,484, 79   , "cinnabar")
+    log(image.find_image_target("cinnabar.bmp"))
+--image.findwepimage()
+--image.findwepimage1()
+if  find_image_target("cinnabar.bmp") == 0 then
+    send("1236789p")
+else
+    left(558, 444 )
+     wait("5s")
+
+end
+
+end
+
+
+
+

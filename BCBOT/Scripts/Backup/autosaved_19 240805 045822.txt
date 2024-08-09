@@ -1,0 +1,20 @@
+if  195, 42 2428971 2428971
+    send F1 1000
+else
+    if_not [51, 193 5120022 5120022 ]
+        left 28, 367
+        wait 2s
+    end_if
+    if_not [ 51, 272 5120022 5120022 ]
+        left 28, 441
+        wait 2s
+    end_if
+    if_not [52, 352 5120279 5120279 ]
+        left  27, 282
+        wait 2s
+    end_if
+    if_not [ 51, 431 1248546 1248546 ]
+        left 29, 203
+     end_if
+
+end_if

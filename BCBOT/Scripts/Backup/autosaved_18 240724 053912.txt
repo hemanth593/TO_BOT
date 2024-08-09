@@ -1,0 +1,6 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local BC = require("BC/BC")
+
+ BC.gettotargetspot()         754, 322

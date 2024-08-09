@@ -1,0 +1,16 @@
+-- lua
+--   Watch video on youtube : https://www.youtube.com/watch?v=2aKe1FYOxbQ
+log 'clear' log 'mode compact'
+local image = require("Bot/image")
+while true do
+    wait("600")
+    send("7")
+    log("clicked")
+    wait("600")
+    image.findimage(wepxbow.bmp)
+
+    log("clicked image")
+    wait("1s")
+end
+
+
