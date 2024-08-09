@@ -1,0 +1,33 @@
+-- lua
+log 'clear' log 'mode compact'
+local image = require("Bot/image")
+local Boss = require("Boss/Boss")
+local memory = require("Bot/memory")
+
+ attackskills = "F5"
+
+X = "1409"     --coordinates of map   X
+Y = "366"     --coordinates of map   Y
+while true do
+    while  (( memory.getLocation_cords(0) == X and memory.getLocation_cords(1) == Y ))   do
+        if  image.find_image_target("cinnabaricon.bmp") == 1 then
+            if  image.find_image_target("cinnabar.bmp") == 0 and image.find_image_target("cinnabaricon.bmp") == 1 then
+                while image.find_image_target("cinnabar.bmp") == 0  do
+                    wait(1000)
+                    send(attackskills)
+                    wait(1000)
+                end
+                else
+                    wait(40)
+                    Boss.gettotargetspot(tonumber(X),tonumber(Y))
+                    wait(40)
+            end
+        else
+            send("Tab")
+            wait(500)
+        end
+    end
+    while not (( memory.getLocation_cords(0) == X and memory.getLocation_cords(1) == Y )) do
+            Boss.gettotargetspot(tonumber(X),tonumber(Y))
+    end
+end
